@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumpleaños Norbert</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <audio id="bg-music" loop>
+    <source src="musica.mpeg" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <!-- Botón para reproducir/pausar -->
+  <button class="music-button" onclick="toggleMusic()" title="Reproducir/Pausar música">▶️</button>
+  <button class="music-button" onclick="toggleMusic()">
+    <div id="disc" class="disc"></div>
+  </button>
+
+  <script>
+    const music = document.getElementById('bg-music');
+    const disc = document.getElementById('disc');
+    let isPlaying = false;
+
+    function toggleMusic() {
+      if (isPlaying) {
+        music.pause();
+        disc.classList.remove('playing');
+      } else {
+        music.play();
+        disc.classList.add('playing');
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
+
+      <!-- PORTADA -->
+  <div class="titulo">
+   <header>
+    <h1 style="margin-top: 150px;">¡Sorpresa para Norberto!</h1>
+    <p>Celebramos sus 70 años con amor</p>
+    <p><strong>07 de junio | 16:00 hrs</strong></p>
+    
+   </header>
+   <div class="carrusel-container">
+     <div class="box">
+       <span style="--i:1;"><img src="imagenes.png/WhatsApp Image 2025-05-16 at 12.12.28.jpeg" alt=""></span>
+       <span style="--i:2;"><img src="imagenes.png/WhatsApp Image 2025-05-16 at 12.12.39.jpeg" alt=""></span>
+       <span style="--i:3;"><img src="imagenes.png/WhatsApp Image 2025-05-16 at 12.12.39 (1).jpeg" alt=""></span>
+       <span style="--i:4;"><img src="imagenes.png/WhatsApp Image 2025-05-15 at 13.30.39.jpeg" alt=""></span>
+       <span style="--i:5;"><img src="imagenes.png/WhatsApp Image 2025-05-15 at 13.37.44.jpeg" alt=""></span>
+       <span style="--i:6;"><img src="imagenes.png/WhatsApp Image 2025-05-15 at 13.39.42.jpeg" alt=""></span>
+       <span style="--i:7;"><img src="imagenes.png/WhatsApp Image 2025-05-15 at 14.02.32.jpeg" alt=""></span>
+       <span style="--i:8;"><img src="imagenes.png/WhatsApp Image 2025-05-16 at 12.12.31.jpeg" alt=""></span>
+     </div>
+    </div>
+
+  <!-- TEXTO DE INVITACIÓN -->
+  <div class="section">
+    <h2>Estás cordialmente invitado</h2>
+    <p>Una vida llena de momentos memorables merece una celebración especial</p>
+    <p>A una fiesta sorpresa en honor a <strong>Norberto Peredo Quinteros</strong>,
+    organizada con mucho cariño </p><p>por su esposa, hijos y nietos.</p>
+    <p>¡Tu presencia hará este momento aún más especial!</p>
+  </div>
+
+  <!-- LUGAR -->
+  <div class="section">
+    <h2>¿Dónde?</h2>
+    <h1><p>Jardín de eventos </p></h1> <p>Av. Villazón, rotonda Km 9.</p>
+     <p>Media cuadra hacia el norte sobre la Av. Santa Rita</p>
+  </div>
+  <!-- GALERÍA (ESPACIO RESERVADO) -->
+  <div class="section">
+    <h2>Galería</h2>
+    <div class="gallery-placeholder">
+      <img src="imagenes.png/Diseño sin título.png" alt="" class="imagen">
+    </div>
+  </div>
+
+  <!-- CONFIRMACIÓN DE ASISTENCIA -->
+  <div class="section">
+    <h2>Confirma tu asistencia</h2>
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSflk1m8FzAth_bp8sJ1XbF22OgnobOrmy0Kox4ph5v4XN0AVQ/viewform?usp=header" target="_blank">
+      Confirmar asistencia
+    </a>
+  </div>
+
+</body>
+</html>

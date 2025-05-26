@@ -4,9 +4,10 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('imagenes.png/fondo.png.jpeg');
-    background-size: cover;
-    background-position: center;
+    background-size: cover
+    ;background-position: center top;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color:rgb(255, 217, 0);
     font-family: 'Segoe UI', sans-serif;
     text-align: center;

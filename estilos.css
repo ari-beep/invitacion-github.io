@@ -15,6 +15,27 @@ body {
     font-style: normal;    
     font-size: 2em;
   }
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+
+  .section {
+    padding: 20px 10px;
+    margin-top: 80px;
+  }
+
+  .box {
+    width: 180px;
+    height: 220px;
+  }
+
+  .gallery-placeholder {
+    width: 95%;
+    padding: 30px;
+  }
+}
 
   .disc {
     width: 100%;
@@ -109,7 +130,7 @@ body {
 
   .music-button {
     position: fixed;
-    bottom: 400px;
+    bottom: 20px;
     right: 10px;
     background-color: #fffc57;
     color: white;
@@ -146,12 +167,12 @@ body {
     color: gold;
   }
   .imagen {
-    width: 900px;      /* Ancho deseado */
-    height: 600PX;      /* Altura automática (mantiene proporción) */
-    border-radius: 10px; /* Opcional: bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Opcional: sombra */
-  }
-  
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
   iframe {
     border: none;
   }

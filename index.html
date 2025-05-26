@@ -37,6 +37,12 @@
       }
       isPlaying = !isPlaying;
     }
+      document.addEventListener('click', function autoPlayOnce() {
+    if (!isPlaying) {
+      toggleMusic();
+    }
+    document.removeEventListener('click', autoPlayOnce);
+  });
   </script>
 
       <!-- PORTADA -->
